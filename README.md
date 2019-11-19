@@ -1,4 +1,3 @@
-# ateste
-Teste de competência Altice Labs, por Robert Ferreira
+# Teste de competência Altice Labs
 
 Listagem dinâmica de canais MEO com programação.
