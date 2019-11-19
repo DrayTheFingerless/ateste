@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Tx-1q-A6V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Canais Controller-->
+        <scene sceneID="Za4-mj-yDc">
+            <objects>
+                <tableViewController id="0Tx-1q-A6V" customClass="CanaisController" customModule="ATeste" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FvL-SZ-JNb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CanalCell" id="0JF-hQ-gq3" customClass="CanaisViewCell" customModule="ATeste" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="103.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0JF-hQ-gq3" id="pqC-GQ-p0L">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="103.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEB-I0-ggY">
+                                            <rect key="frame" x="0.0" y="5" width="165.5" height="93.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="LEB-I0-ggY" secondAttribute="height" multiplier="16:9" id="lSA-bZ-sOA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bbk-O9-f8x">
+                                            <rect key="frame" x="175.5" y="10" width="142.5" height="83.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXm-57-Ap0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="19"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Program" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="w3z-Y5-Utc">
+                                                    <rect key="frame" x="0.0" y="29" width="142.5" height="24.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Program" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="z92-WM-Tdd">
+                                                    <rect key="frame" x="0.0" y="63.5" width="94.5" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Bbk-O9-f8x" firstAttribute="top" secondItem="pqC-GQ-p0L" secondAttribute="top" constant="10" id="D8e-cm-UBg"/>
+                                        <constraint firstAttribute="bottom" secondItem="LEB-I0-ggY" secondAttribute="bottom" constant="5" id="E4r-ui-F1i"/>
+                                        <constraint firstItem="LEB-I0-ggY" firstAttribute="top" secondItem="pqC-GQ-p0L" secondAttribute="top" constant="5" id="N9e-om-HBd"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bbk-O9-f8x" secondAttribute="bottom" constant="10" id="Npv-jv-59q"/>
+                                        <constraint firstItem="LEB-I0-ggY" firstAttribute="width" secondItem="pqC-GQ-p0L" secondAttribute="width" multiplier="0.4" id="VQD-f6-kaj"/>
+                                        <constraint firstItem="Bbk-O9-f8x" firstAttribute="leading" secondItem="LEB-I0-ggY" secondAttribute="trailing" constant="10" id="cpj-rD-Vf8"/>
+                                        <constraint firstItem="LEB-I0-ggY" firstAttribute="leading" secondItem="pqC-GQ-p0L" secondAttribute="leading" id="foJ-sp-iFN"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bbk-O9-f8x" secondAttribute="trailing" constant="10" id="ihH-0M-NlK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="canalImage" destination="LEB-I0-ggY" id="So6-VT-opZ"/>
+                                    <outlet property="canalName" destination="kXm-57-Ap0" id="oah-HH-eGF"/>
+                                    <outlet property="currentProgram" destination="w3z-Y5-Utc" id="pdQ-VL-uTw"/>
+                                    <outlet property="nextProgram" destination="z92-WM-Tdd" id="qWU-xz-eZj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Tx-1q-A6V" id="Ra2-8M-MzL"/>
+                            <outlet property="delegate" destination="0Tx-1q-A6V" id="Sdv-AD-Vpa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EmY-6U-Dum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="-86.383928571428569"/>
+        </scene>
+    </scenes>
+</document>
